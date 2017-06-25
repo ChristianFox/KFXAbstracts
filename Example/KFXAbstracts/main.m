@@ -1,0 +1,17 @@
+//
+//  main.m
+//  KFXAbstracts
+//
+//  Created by ChristianFox on 06/25/2017.
+//  Copyright (c) 2017 ChristianFox. All rights reserved.
+//
+
+@import UIKit;
+#import "DEMOAppDelegate.h"
+
+int main(int argc, char * argv[])
+{
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DEMOAppDelegate class]));
+    }
+}
