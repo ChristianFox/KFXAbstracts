@@ -1,0 +1,24 @@
+PODS:
+  - KFXAbstracts (0.1.0):
+    - KFXAdditions
+    - SVProgressHUD
+  - KFXAdditions (0.35.3)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - KFXAbstracts (from `../`)
+  - KFXAdditions
+  - SVProgressHUD
+
+EXTERNAL SOURCES:
+  KFXAbstracts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KFXAbstracts: 290eeb69a55ee240cef12f064bd55237cadd590f
+  KFXAdditions: '04029bf103bbf09d3a75a9f31c7752b1c961f901'
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: 0df31f25f1ee2fd7f4cabdc0dab185d6e17d4733
+
+COCOAPODS: 1.2.1

@@ -1,0 +1,1 @@
+../../../../../KFXAbstracts/Classes/KFXCollectionViewCell.h
