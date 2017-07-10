@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KFXAbstracts: 290eeb69a55ee240cef12f064bd55237cadd590f
+  KFXAbstracts: 3a75fa4ca49837bafa961c21ad5e210b1d97d4f1
   KFXAdditions: '04029bf103bbf09d3a75a9f31c7752b1c961f901'
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 

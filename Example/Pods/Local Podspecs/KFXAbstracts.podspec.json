@@ -15,6 +15,9 @@
     "git": "https://kfxtech@bitbucket.org/kfxteam/kfxabstracts.git",
     "tag": "0.1.0"
   },
+  "platforms": {
+    "ios": "9.0"
+  },
   "source_files": "KFXAbstracts/Classes/**/*",
   "dependencies": {
     "KFXAdditions": [
@@ -23,11 +26,5 @@
     "SVProgressHUD": [
 
     ]
-  },
-  "platforms": {
-    "osx": null,
-    "ios": null,
-    "tvos": null,
-    "watchos": null
   }
 }

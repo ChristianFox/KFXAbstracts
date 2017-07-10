@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+#import <KFXAbstracts/KFXTableViewCell.h>
 
 @interface Tests : XCTestCase
 
@@ -26,9 +27,12 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testInitiliseCellFromNib
 {
-//    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+
+    UINib *cellNib = [KFXTableViewCell nib];
+    XCTAssertNotNil(cellNib);
+
 }
 
 @end

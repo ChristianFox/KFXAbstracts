@@ -25,7 +25,7 @@ willNavigateToViewController:(UIViewController*)destinationViewController;
 
 @interface KFXViewController : UIViewController
 
-//@property (weak, nonatomic) id<KFXViewControllerNavigationDelegate> navigationDelegate;
+@property (weak, nonatomic) id<KFXViewControllerNavigationDelegate> navigationDelegate;
 // Flags
 @property (nonatomic,getter=isVisible) BOOL visible;
 

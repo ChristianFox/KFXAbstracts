@@ -16,7 +16,7 @@
 +(UINib *)nib{
     
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class])
-                                bundle:[NSBundle mainBundle]];
+                                bundle:[NSBundle bundleForClass:[self class]]];
     return nib;
 }
 
