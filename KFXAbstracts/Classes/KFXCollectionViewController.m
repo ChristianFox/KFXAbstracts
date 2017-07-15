@@ -24,6 +24,9 @@
 //======================================================
 #pragma mark - ** Public Methods **
 //======================================================
+//--------------------------------------------------------
+#pragma mark Initilisation
+//--------------------------------------------------------
 +(instancetype)initiliseWithFlowLayout{
 	
 	UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
