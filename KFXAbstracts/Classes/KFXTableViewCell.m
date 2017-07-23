@@ -13,10 +13,13 @@
 
 @implementation KFXTableViewCell
 
+//======================================================
+#pragma mark - ** Public Methods **
+//======================================================
 +(UINib *)nib{
     
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class])
-                                bundle:[NSBundle bundleForClass:[self class]]];
+                                bundle:[self bundle]];
     return nib;
 }
 
@@ -24,12 +27,8 @@
     return NSStringFromClass([self class]);
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-    self.backgroundColor = [UIColor clearColor];
-    [self addBorderIfNeeded];
-    
++(NSBundle *)bundle{
+    return [NSBundle bundleForClass:[self class]];
 }
 
 -(void)addBorder{
@@ -45,13 +44,28 @@
         [self addBorder];
         
     }
-    
+}
+
+
+//======================================================
+#pragma mark - ** Inherited Methods **
+//======================================================
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+    self.backgroundColor = [UIColor clearColor];
+    [self addBorderIfNeeded];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
+
+
+
+
+
 
 @end

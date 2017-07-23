@@ -14,10 +14,13 @@
 
 @implementation KFXCollectionViewCell
 
+//======================================================
+#pragma mark - ** Public Methods **
+//======================================================
 +(UINib *)nib{
     
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class])
-                                bundle:[NSBundle bundleForClass:[self class]]];
+                                bundle:[self bundle]];
     return nib;
 }
 
@@ -25,8 +28,27 @@
     return NSStringFromClass([self class]);
 }
 
++(NSBundle *)bundle{
+    return [NSBundle bundleForClass:[self class]];
+}
 
+-(void)addBorder{
+    [self.contentView kfx_addBorderWithRadius:3.0 width:self.borderWidth colour:self.borderColour];
+    
+}
 
+-(void)addBorderIfNeeded{
+    
+    if (self.borderColour != nil
+        && self.borderWidth >= 1) {
+        
+        [self addBorder];
+    }
+}
+
+//======================================================
+#pragma mark - ** Inherited Methods **
+//======================================================
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -37,21 +59,7 @@
     
 }
 
--(void)addBorder{
-    [self.contentView kfx_addBorderWithRadius:3.0 width:self.borderWidth colour:self.borderColour];
 
-}
-
--(void)addBorderIfNeeded{
-    
-    if (self.borderColour != nil
-        && self.borderWidth >= 1) {
-        
-        [self addBorder];
-        
-    }
-
-}
 
 
 @end

@@ -2,6 +2,8 @@
 
 # KFXAbstracts ChangeLog #
 
+## v0.3.0 - Adds +bundle; method to Table & Collection cells
+
 ## v0.2.0 - Switch to new BB repo
 
 ## v0.1.1

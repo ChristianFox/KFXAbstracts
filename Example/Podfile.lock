@@ -1,8 +1,8 @@
 PODS:
-  - KFXAbstracts (0.1.0):
+  - KFXAbstracts (0.3.0):
     - KFXAdditions
     - SVProgressHUD
-  - KFXAdditions (0.35.3)
+  - KFXAdditions (0.36.0)
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
@@ -15,10 +15,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KFXAbstracts: 3a75fa4ca49837bafa961c21ad5e210b1d97d4f1
-  KFXAdditions: '04029bf103bbf09d3a75a9f31c7752b1c961f901'
+  KFXAbstracts: df92ddb6cfb63b77f21c3c42fb03961365c09238
+  KFXAdditions: 371560b0199a420e8a9a44e02e2e4c2e10ebc0bc
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 0df31f25f1ee2fd7f4cabdc0dab185d6e17d4733
+PODFILE CHECKSUM: aa4302b17cc292f985bfaa13ae9e30531120f190
 
 COCOAPODS: 1.2.1

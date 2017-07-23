@@ -7,7 +7,7 @@ target 'KFXAbstracts_Example' do
   # Pods for Main target
   ## Sources
   ### If using private pods
-  source 'https://bitbucket.org/kfxteam/kfxtech_cocoapodsspec'
+  source 'https://kfxtech@bitbucket.org/kfx_pods/kfxsharedspecs.git'
   
   pod 'KFXAdditions'
 

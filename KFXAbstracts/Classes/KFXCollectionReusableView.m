@@ -12,15 +12,24 @@
 
 @implementation KFXCollectionReusableView
 
+
+//======================================================
+#pragma mark - ** Public Methods **
+//======================================================
 +(UINib *)nib{
     
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class])
-                                bundle:[NSBundle bundleForClass:[self class]]];
+                                bundle:[self bundle]];
     return nib;
 }
 
 +(NSString *)reuseIdentifier{
     return NSStringFromClass([self class]);
 }
+
++(NSBundle *)bundle{
+    return [NSBundle bundleForClass:[self class]];
+}
+
 
 @end

@@ -14,5 +14,6 @@
 
 +(UINib*)nib;
 +(NSString*)reuseIdentifier;
++(NSBundle*)bundle;
 
 @end
