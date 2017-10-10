@@ -15,6 +15,12 @@
 @property (nonatomic) CGFloat borderWidth;
 @property (strong,nonatomic) UIColor *borderColour;
 
+//
+@property (weak,nonatomic) id cellData;
+@property (weak,nonatomic) id identifier;
+
+
+
 
 +(UINib*)nib;
 +(NSString*)reuseIdentifier;

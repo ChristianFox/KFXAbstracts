@@ -1,6 +1,6 @@
 {
   "name": "KFXAbstracts",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "summary": "KFXAbstracts : Abstract superclasses.",
   "description": "UIView & UIViewController subclasses.",
   "homepage": "https://kfxtech@bitbucket.org/kfx_pods/kfxabstracts.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://kfxtech@bitbucket.org/kfx_pods/kfxabstracts.git",
-    "tag": "0.3.0"
+    "tag": "0.4.0"
   },
   "platforms": {
     "ios": "9.0"
