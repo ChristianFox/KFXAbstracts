@@ -2,7 +2,9 @@
 
 # KFXAbstracts ChangeLog #
 
-## v0.4.0 - Adds KFXView with drawing block
+### v0.5.0 | Separates KFXViewControllerNavigationDelegate to separate protocol file. KFXTableVC and KFXCollectionVC now conform to KFXViewControllerNavigationDelegate
+
+### v0.4.0 - Adds KFXView with drawing block
 
 ## v0.3.0 - Adds +bundle; method to Table & Collection cells
 

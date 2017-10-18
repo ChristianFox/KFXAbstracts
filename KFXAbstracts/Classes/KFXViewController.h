@@ -14,17 +14,20 @@
 // Categories
 #import <KFXAdditions/UIViewController+KFXAdditions.h>
 #import "UIViewController+KFXProgressHUD.h"
+// Protocols
+#import "KFXViewControllerNavigationDelegate.h"
 
-@class KFXViewController;
-@protocol KFXViewControllerNavigationDelegate <NSObject>
-
--(void)viewController:(KFXViewController*)presentingViewController
-willNavigateToViewController:(UIViewController*)destinationViewController;
-
-@end
+//@class KFXViewController;
+//@protocol KFXViewControllerNavigationDelegate <NSObject>
+//
+//-(void)viewController:(KFXViewController*)presentingViewController
+//willNavigateToViewController:(UIViewController*)destinationViewController;
+//
+//@end
 
 @interface KFXViewController : UIViewController
 
+// Delegate
 @property (weak, nonatomic) id<KFXViewControllerNavigationDelegate> navigationDelegate;
 // Flags
 @property (nonatomic,getter=isVisible) BOOL visible;

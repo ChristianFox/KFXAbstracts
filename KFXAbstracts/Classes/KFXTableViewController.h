@@ -16,9 +16,13 @@
 #import <KFXAdditions/UIViewController+KFXAdditions.h>
 #import <KFXAdditions/UITableViewController+KFXAdditions.h>
 #import "UIViewController+KFXProgressHUD.h"
+// Protocols
+#import "KFXViewControllerNavigationDelegate.h"
 
 @interface KFXTableViewController : UITableViewController 
 
+// Delegate
+@property (weak, nonatomic) id<KFXViewControllerNavigationDelegate> navigationDelegate;
 // Flags
 @property (nonatomic,getter=isVisible) BOOL visible;
 

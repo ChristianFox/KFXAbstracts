@@ -15,9 +15,13 @@
 #import <KFXAdditions/UIViewController+KFXAdditions.h>
 #import <KFXAdditions/UICollectionViewController+KFXAdditions.h>
 #import "UIViewController+KFXProgressHUD.h"
+// Protocols
+#import "KFXViewControllerNavigationDelegate.h"
 
 @interface KFXCollectionViewController : UICollectionViewController
 
+// Delegate
+@property (weak, nonatomic) id<KFXViewControllerNavigationDelegate> navigationDelegate;
 // Flags
 @property (nonatomic,getter=isVisible) BOOL visible;
 
