@@ -19,7 +19,7 @@
 ************************************/
 
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 /** Block typedef used for drawing the contents of the UIView */
 typedef void (^KFXViewDrawingBlock)(UIView *view, CGContextRef context);

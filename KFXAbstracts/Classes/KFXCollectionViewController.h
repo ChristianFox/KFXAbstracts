@@ -10,13 +10,13 @@
 
 
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 // Categories
 #import <KFXAdditions/UIViewController+KFXAdditions.h>
 #import <KFXAdditions/UICollectionViewController+KFXAdditions.h>
-#import "UIViewController+KFXProgressHUD.h"
+#import <KFXAbstracts/UIViewController+KFXProgressHUD.h>
 // Protocols
-#import "KFXViewControllerNavigationDelegate.h"
+#import <KFXAbstracts/KFXViewControllerNavigationDelegate.h>
 
 @interface KFXCollectionViewController : UICollectionViewController
 

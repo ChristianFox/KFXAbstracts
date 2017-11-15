@@ -2,6 +2,9 @@
 
 # KFXAbstracts ChangeLog #
 
+### v0.6.0 |
+- Adds KFXAbstracts header file
+
 ### v0.5.0 | Separates KFXViewControllerNavigationDelegate to separate protocol file. KFXTableVC and KFXCollectionVC now conform to KFXViewControllerNavigationDelegate
 
 ### v0.4.0 - Adds KFXView with drawing block

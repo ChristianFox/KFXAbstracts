@@ -11,7 +11,7 @@
 
 
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface UIViewController (KFXProgressHUD)
 

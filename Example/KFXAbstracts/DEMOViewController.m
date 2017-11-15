@@ -1,29 +1,118 @@
-//
-//  DEMOViewController.m
-//  KFXAbstracts
-//
-//  Created by ChristianFox on 06/25/2017.
-//  Copyright (c) 2017 ChristianFox. All rights reserved.
-//
+
 
 #import "DEMOViewController.h"
 
+
 @interface DEMOViewController ()
+
 
 @end
 
 @implementation DEMOViewController
 
-- (void)viewDidLoad
-{
+
+
+
+//======================================================
+#pragma mark - ** Public Methods **
+//======================================================
+
+//--------------------------------------------------------
+#pragma mark Inject Dependencies
+//--------------------------------------------------------
+
+
+//--------------------------------------------------------
+#pragma mark Actions
+//--------------------------------------------------------
+
+
+//======================================================
+#pragma mark - ** Inherited Methods **
+//======================================================
+//--------------------------------------------------------
+#pragma mark UIViewController
+//--------------------------------------------------------
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//-(void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//}
+
+//-(void)viewDidAppear:(BOOL)animated{
+//    [super viewDidAppear:animated];
+//}
+
+//- (void)didReceiveMemoryWarning {
+//    [super didReceiveMemoryWarning];
+//}
+
+//--------------------------------------------------------
+#pragma mark NSObject
+//--------------------------------------------------------
+//-(void)dealloc{
+//
+//}
+
+
+
+
+//======================================================
+#pragma mark - ** Protocol Methods **
+//======================================================
+
+
+
+
+
+//======================================================
+#pragma mark - ** Private Methods **
+//======================================================
+//--------------------------------------------------------
+#pragma mark Lazy Load
+//--------------------------------------------------------
+
+
+
+
+
+//======================================================
+#pragma mark - ** Navigation **
+//======================================================
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end
