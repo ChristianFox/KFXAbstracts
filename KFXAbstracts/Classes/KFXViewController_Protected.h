@@ -11,13 +11,10 @@
 
 
 
-#import "KFXViewController.h"
-// Cocoa Frameworks
-@import MessageUI;
+#import <KFXAbstracts/KFXAbstracts.h>
 
-@interface KFXViewController (MFMailComposer) <MFMailComposeViewControllerDelegate>
+@interface KFXViewController ()
 
--(void)presentEmailComposerWithSubject:(NSString*)subject message:(NSString*)message messageIsHTML:(BOOL)isHTML receipients:(NSArray<NSString*>*)recipients;
-
+-(void)backButtonTapped:(id)sender;
 
 @end

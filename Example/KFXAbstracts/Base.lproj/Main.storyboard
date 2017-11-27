@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,42 +20,8 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVf-DV-usN" customClass="KFXButton">
-                                <rect key="frame" x="46" y="70" width="283" height="50"/>
-                                <color key="backgroundColor" red="0.84215106865284972" green="0.84215106865284972" blue="0.84215106865284972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="nHR-kU-yUD"/>
-                                </constraints>
-                                <state key="normal" title="KFXButton"/>
-                                <connections>
-                                    <action selector="buttonATapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="iV4-Jw-pIu"/>
-                                </connections>
-                            </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i9b-kK-xKz">
-                                <rect key="frame" x="280" y="143" width="51" height="31"/>
-                                <connections>
-                                    <action selector="switchDidChange:" destination="whP-gf-Uak" eventType="valueChanged" id="sYF-lo-njf"/>
-                                </connections>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yG7-h5-06e">
-                                <rect key="frame" x="94" y="357" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="dVf-DV-usN" secondAttribute="trailing" constant="30" id="7qs-4I-log"/>
-                            <constraint firstItem="i9b-kK-xKz" firstAttribute="top" secondItem="dVf-DV-usN" secondAttribute="bottom" constant="23" id="Kbo-EI-q9T"/>
-                            <constraint firstItem="dVf-DV-usN" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="50" id="Y6D-j2-RcN"/>
-                            <constraint firstItem="dVf-DV-usN" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="30" id="n5g-E9-y2p"/>
-                            <constraint firstItem="i9b-kK-xKz" firstAttribute="trailing" secondItem="dVf-DV-usN" secondAttribute="trailing" id="nXL-EW-bYb"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="dVf-DV-usN" id="ZEF-Le-MXS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

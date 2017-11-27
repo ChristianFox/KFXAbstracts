@@ -1,4 +1,3 @@
-
 /********************************
  *
  * Copyright © 2016-2017 Christian Fox
@@ -11,14 +10,8 @@
 
 
 
+#import <KFXAbstracts/KFXAbstracts.h>
 
-#import "KFXViewController.h"
-// Cocoa Frameworks
-@import MessageUI;
-
-@interface KFXViewController (MFMessageComposer) <MFMessageComposeViewControllerDelegate>
-
--(void)presentSMSComposerWithSubject:(NSString*)subject message:(NSString*)message receipients:(NSArray<NSString*>*)recipients;
-
-
+@interface KFXTableViewController ()
+-(void)backButtonTapped:(id)sender;
 @end

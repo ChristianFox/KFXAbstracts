@@ -2,6 +2,15 @@
 
 # KFXAbstracts ChangeLog #
 
+### 0.7.0 ...
+- Adds -deselectRowAnimated: and -deselectAllRowsAnimated: methods to KFXTableViewController
+- Adds -deselectAllItemsAnimated: to KFXCollectionViewController
+- Adds -addCustomBackButtonWithImage; to ViewControllers
+- Adds -presentEmailComposerWithSubject:...  to ViewControllers
+- Adds -presentSMSComposerWithSubject:...  to ViewControllers
+- Adds -backButtonTapped: to ViewControllers Protected extensions
+- Removed 2 KFXViewController categories: +MailCompose, +MessageCompose
+
 ### v0.6.0 |
 - Adds KFXAbstracts header file
 

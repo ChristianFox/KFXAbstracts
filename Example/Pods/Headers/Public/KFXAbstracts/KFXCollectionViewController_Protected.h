@@ -1,0 +1,1 @@
+../../../../../KFXAbstracts/Classes/KFXCollectionViewController_Protected.h
