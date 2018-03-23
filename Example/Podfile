@@ -1,20 +1,11 @@
 # use_frameworks!
-platform :ios, '9.0'
+platform :ios, '8.0'
 
 target 'KFXAbstracts_Example' do
   pod 'KFXAbstracts', :path => '../'
 
   # Pods for Main target
-  ## Sources
-  ### If using private pods
-  source 'https://kfxtech@bitbucket.org/kfx_pods/kfxsharedspecs.git'
-  
   pod 'KFXAdditions'
-
-  ### If using from trunk
-  source 'http://github.com/Cocoapods/Specs.git'
-
-  pod 'SVProgressHUD'
 
   target 'KFXAbstracts_Tests' do
     inherit! :search_paths

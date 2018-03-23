@@ -2,7 +2,11 @@
 
 # KFXAbstracts ChangeLog #
 
-### 0.7.0 ...
+### 1.0.0 | Release
+- Updates ReadMe
+- Updates Licence
+
+### 0.7.0
 - Adds -deselectRowAnimated: and -deselectAllRowsAnimated: methods to KFXTableViewController
 - Adds -deselectAllItemsAnimated: to KFXCollectionViewController
 - Adds -addCustomBackButtonWithImage; to ViewControllers
