@@ -15,7 +15,6 @@
 // Categories
 #import <KFXAdditions/UIViewController+KFXAdditions.h>
 #import <KFXAdditions/UICollectionViewController+KFXAdditions.h>
-#import <KFXAbstracts/UIViewController+KFXProgressHUD.h>
 // Protocols
 #import <KFXAbstracts/KFXViewControllerNavigationDelegate.h>
 

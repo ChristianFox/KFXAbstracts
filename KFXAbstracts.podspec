@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KFXAbstracts'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'KFXAbstracts : Abstract superclasses.'
 
   s.description      = <<-DESC
