@@ -1,8 +1,8 @@
 /********************************
  *
- * Copyright © 2016-2017 Christian Fox
- * All Rights Reserved
- * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ * Copyright © 2016-2018 Christian Fox
+ *
+ * MIT Licence - Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
  *
  * This file is included with KFXAdditions
  *
@@ -10,12 +10,17 @@
 
 
 #import <Foundation/Foundation.h>
+@import CoreGraphics;
 
 typedef NS_OPTIONS(NSUInteger, KFXStringComponent) {
     KFXStringComponentNone = 0,
+    /// abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
     KFXStringComponentAlpha = 1 << 0,
+    /// 0123456789
     KFXStringComponentNumerical = 1 << 1,
+    /// <>!@£$%%&*€#?+-=_
     KFXStringComponentSymbolsCommon = 1 << 2,
+    /// §±!@£$%%^&*()_+=-€#¡¢∞§¶•ªº–≠œ∑®®†¥¨^øπ“‘«æ…¬˚∆˙©ƒ∂ßåΩ≈ç√∫~µ≤≥÷?><,./;'\\[]}{|\":`~
     KFXStringComponentSymbolsExtensive = 1 << 3,
 };
 
@@ -31,6 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Create a random string from the character pool specified by KFXStringComponent
 +(NSString*)kfx_randomStringOfLength:(int)length withStringComponents:(KFXStringComponent)components;
+
+/// Create a random string from the character pool specified by KFXStringComponent + additional characters
++(NSString*)kfx_randomStringOfLength:(int)length withStringComponents:(KFXStringComponent)components andCharacterPool:(NSString*__nullable)characterPool;
 
 /// Creates a random string from the characters provided
 +(NSString*)kfx_randomStringOfLength:(int)length fromCharacterPool:(NSString*)characterPool;
@@ -121,6 +129,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Prepares a telephone number for being called
 -(NSString*)kfx_cleanTelephoneNumber;
 
+
 //--------------------------------------------------------
 #pragma mark - Attributed String
 //--------------------------------------------------------
@@ -131,11 +140,16 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSAttributedString *)kfx_attributedStringWithAttributes:(NSDictionary *)attributes;
 
 //--------------------------------------------------------
-#pragma mark - Ranges
+#pragma mark - Get/Create from String
 //--------------------------------------------------------
 /// Returns the NSRange for the receiver
 -(NSRange)kfx_rangeOfString;
 
+/// Returns an array of initials, one string for every word in recevier
+-(NSArray*)kfx_initials;
+
+/// Returns a string with a single character that is the first initial
+-(NSString*)kfx_firstInitial;
 
 
 

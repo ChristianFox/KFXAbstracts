@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KFXAbstracts'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
   s.summary          = 'KFXAbstracts : Abstract superclasses.'
 
   s.description      = <<-DESC
@@ -15,4 +15,5 @@ UIView & UIViewController subclasses.
   s.ios.deployment_target = '8.0'
   s.source_files = 'KFXAbstracts/Classes/**/*'
   s.dependency 'KFXAdditions'
+
 end

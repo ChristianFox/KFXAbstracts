@@ -1,8 +1,8 @@
 /********************************
  *
- * Copyright © 2016-2017 Christian Fox
- * All Rights Reserved
- * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ * Copyright © 2016-2018 Christian Fox
+ *
+ * MIT Licence - Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
  *
  * This file is included with KFXAdditions
  *
@@ -111,6 +111,17 @@ NS_ASSUME_NONNULL_BEGIN
                                  saturation:(CGFloat)saturation
                                  brightness:(CGFloat)brightness
                                       alpha:(CGFloat)alpha;
+
+    
+    /**
+     * @brief Creates a new UIColor by combining the receiver with the otherColour
+     * @param otherColour The other colour to combine with the receiver
+     * @param amount The amount of colour data to take from the receiver. Will be used as the 'alpha' value in the linear interpolation formula.
+     * @return A new UIColor object.
+     * @since 0.12.0
+     **/
+-(UIColor*)kfx_combineWithColour:(UIColor*)otherColour amount:(CGFloat)amount;
+    
 
 
 //--------------------------------------------------------

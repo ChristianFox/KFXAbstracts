@@ -1,8 +1,8 @@
 /********************************
  *
- * Copyright © 2016-2017 Christian Fox
- * All Rights Reserved
- * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ * Copyright © 2016-2018 Christian Fox
+ *
+ * MIT Licence - Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
  *
  * This file is included with KFXAdditions
  *
@@ -44,6 +44,18 @@
         return NO;
     }
 }
+
+-(BOOL)kfx_isCloseToDate:(NSDate *)anotherDate withinSeconds:(NSTimeInterval)seconds{
+    
+    NSTimeInterval positiveSeconds = seconds;
+    if (positiveSeconds < 0) {
+        positiveSeconds = -positiveSeconds;
+    }
+    NSDate *early = [anotherDate dateByAddingTimeInterval:-positiveSeconds];
+    NSDate *late = [anotherDate dateByAddingTimeInterval:positiveSeconds];
+    return [self kfx_isBetweenStartDate:early andEndDate:late];
+}
+
 
 
 //--------------------------------------------------------
@@ -206,9 +218,10 @@
 //--------------------------------------------------------
 -(NSDateComponents*)kfx_currentCalendarDateComponents {
 	
-	NSCalendar *calendar = [NSCalendar currentCalendar];
-	
-	return [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitWeekday | NSCalendarUnitWeekOfMonth| NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:self];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitWeekday | NSCalendarUnitWeekOfMonth| NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:self];
+    components.calendar = calendar;
+    return components;
 }
 
 
@@ -241,6 +254,10 @@
     return [[NSCalendar currentCalendar] dateFromComponents:components];
 }
 
+-(NSDate *)kfx_midnight{
+    
+    return [self kfx_dateWithHour:0 minute:0 second:0];
+}
 
 
 @end

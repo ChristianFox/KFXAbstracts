@@ -1,8 +1,8 @@
 /********************************
  *
- * Copyright © 2016-2017 Christian Fox
- * All Rights Reserved
- * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ * Copyright © 2016-2018 Christian Fox
+ *
+ * MIT Licence - Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
  *
  * This file is included with KFXAdditions
  *
@@ -23,6 +23,21 @@
 /** The indexPath of the cell in the tableView the cell is displayed in */
 -(NSIndexPath*)kfx_indexPath{
     return [[self kfx_tableView] indexPathForCell:self];
+}
+
++(UINib *)kfx_nib{
+    
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class])
+                                bundle:[self kfx_bundle]];
+    return nib;
+}
+
++(NSString *)kfx_reuseIdentifier{
+    return NSStringFromClass([self class]);
+}
+
++(NSBundle *)kfx_bundle{
+    return [NSBundle bundleForClass:[self class]];
 }
 
 @end

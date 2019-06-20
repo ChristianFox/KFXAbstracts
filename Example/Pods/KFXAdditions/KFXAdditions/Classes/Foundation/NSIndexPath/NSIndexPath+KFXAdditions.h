@@ -1,8 +1,8 @@
 /********************************
  *
- * Copyright © 2016-2017 Christian Fox
- * All Rights Reserved
- * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ * Copyright © 2016-2018 Christian Fox
+ *
+ * MIT Licence - Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
  *
  * This file is included with KFXAdditions
  *
@@ -13,6 +13,11 @@
 
 @interface NSIndexPath (KFXAdditions)
 
+//------------------------
+#pragma mark Convenience
+//------------------------
+/// Creates an instance with section = 0, row = 0
++(instancetype)kfx_zeroZeroPath;
 
 //--------------------------------------------------------
 #pragma mark Creating Arrays of Index Paths
@@ -49,7 +54,11 @@
 										  toItem:(NSInteger)endItem
 									  inSection:(NSInteger)section;
 
-
+//------------------------
+#pragma mark Converting from/to view Tags
+//------------------------
+-(NSInteger)kfx_viewTag;
++(NSIndexPath*)kfx_indexPathForViewTag:(NSInteger)viewTag;
 
 
 @end

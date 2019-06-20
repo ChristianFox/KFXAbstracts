@@ -2,6 +2,8 @@
 
 # KFXAbstracts ChangeLog #
 
+### 1.1.0 | Removes SVProgressHUD
+
 ### 1.0.1 | Fixes
 
 ### 1.0.0 | Release

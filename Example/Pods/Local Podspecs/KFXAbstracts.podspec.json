@@ -1,29 +1,26 @@
 {
   "name": "KFXAbstracts",
-  "version": "0.7.0",
+  "version": "1.1.0",
   "summary": "KFXAbstracts : Abstract superclasses.",
   "description": "UIView & UIViewController subclasses.",
-  "homepage": "https://kfxtech@bitbucket.org/kfx_pods/kfxabstracts.git",
+  "homepage": "https://github.com/ChristianFox/KFXAbstracts.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "ChristianFox": "christianfox890@icloud.com"
+    "ChristianFox": "christianfox@kfxtech.com"
   },
   "source": {
-    "git": "https://kfxtech@bitbucket.org/kfx_pods/kfxabstracts.git",
-    "tag": "0.7.0"
+    "git": "https://github.com/ChristianFox/KFXAbstracts.git",
+    "tag": "1.1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "8.0"
   },
   "source_files": "KFXAbstracts/Classes/**/*",
   "dependencies": {
     "KFXAdditions": [
-
-    ],
-    "SVProgressHUD": [
 
     ]
   }
