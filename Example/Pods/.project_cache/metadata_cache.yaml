@@ -1,0 +1,16 @@
+KFXAbstracts:
+  LABEL: KFXAbstracts
+  PROJECT_PATH: KFXAbstracts.xcodeproj
+  UUID: 59D5D99A344CEE6B648C93115DCD1B51
+KFXAdditions:
+  LABEL: KFXAdditions
+  PROJECT_PATH: KFXAdditions.xcodeproj
+  UUID: 67A3EF330AB3A81AC00950B231BA351A
+Pods-KFXAbstracts_Example:
+  LABEL: Pods-KFXAbstracts_Example
+  PROJECT_PATH: Pods.xcodeproj
+  UUID: 48CBA05499FC51544D6C6615C33615AB
+Pods-KFXAbstracts_Tests:
+  LABEL: Pods-KFXAbstracts_Tests
+  PROJECT_PATH: Pods.xcodeproj
+  UUID: C8C63DB43526CC33799223B3141F571A

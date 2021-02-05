@@ -2,6 +2,8 @@
 
 # KFXAbstracts ChangeLog #
 
+### 1.2.0 | Update to use newish cocoapods options incremental_installation and generate_multiple_pod_projects. Switches to using cocopods CDN
+
 ### 1.1.0 | Removes SVProgressHUD
 
 ### 1.0.1 | Fixes

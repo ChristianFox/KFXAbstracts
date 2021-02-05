@@ -1,0 +1,55 @@
+BUILD_CONFIGURATIONS:
+  Debug: :debug
+  Release: :release
+CACHE_KEYS:
+  KFXAbstracts:
+    BUILD_SETTINGS_CHECKSUM:
+      KFXAbstracts:
+        :debug: 7a0f138873fe132358dc5e2613b7c021
+        :release: 7a0f138873fe132358dc5e2613b7c021
+    CHECKSUM: 73070608124ca9a3d9f9ec47ddb4f678ea0d9aea
+    FILES:
+      - "../../KFXAbstracts/Classes/KFXAbstracts.h"
+      - "../../KFXAbstracts/Classes/KFXCollectionReusableView.h"
+      - "../../KFXAbstracts/Classes/KFXCollectionReusableView.m"
+      - "../../KFXAbstracts/Classes/KFXCollectionViewCell.h"
+      - "../../KFXAbstracts/Classes/KFXCollectionViewCell.m"
+      - "../../KFXAbstracts/Classes/KFXCollectionViewController.h"
+      - "../../KFXAbstracts/Classes/KFXCollectionViewController.m"
+      - "../../KFXAbstracts/Classes/KFXCollectionViewController_Protected.h"
+      - "../../KFXAbstracts/Classes/KFXTableViewCell.h"
+      - "../../KFXAbstracts/Classes/KFXTableViewCell.m"
+      - "../../KFXAbstracts/Classes/KFXTableViewController.h"
+      - "../../KFXAbstracts/Classes/KFXTableViewController.m"
+      - "../../KFXAbstracts/Classes/KFXTableViewController_Protected.h"
+      - "../../KFXAbstracts/Classes/KFXView.h"
+      - "../../KFXAbstracts/Classes/KFXView.m"
+      - "../../KFXAbstracts/Classes/KFXViewController.h"
+      - "../../KFXAbstracts/Classes/KFXViewController.m"
+      - "../../KFXAbstracts/Classes/KFXViewController_Protected.h"
+      - "../../KFXAbstracts/Classes/KFXViewControllerNavigationDelegate.h"
+      - "../../LICENSE"
+      - "../../README.md"
+    PROJECT_NAME: KFXAbstracts
+    SPECS:
+      - KFXAbstracts (1.2.0)
+  KFXAdditions:
+    BUILD_SETTINGS_CHECKSUM:
+      KFXAdditions:
+        :debug: 20d5e58d8732c64d6d681488dae89ac1
+        :release: 20d5e58d8732c64d6d681488dae89ac1
+    CHECKSUM: f8c198ca07195019ebe78547a67b44264a338ea7
+    PROJECT_NAME: KFXAdditions
+    SPECS:
+      - KFXAdditions (2.6.1)
+  Pods-KFXAbstracts_Example:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 85d5f294c3da8339456013597025b8fe
+      Release: 85d5f294c3da8339456013597025b8fe
+  Pods-KFXAbstracts_Tests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 5092ec1bb9e7ac42fe82d0298b4675c4
+      Release: 5092ec1bb9e7ac42fe82d0298b4675c4
+OBJECT_VERSION: 46
+PLUGINS:
+  {}
